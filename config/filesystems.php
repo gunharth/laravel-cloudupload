@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => 'local',
+    'default' => 'rackspace',
 
     /*
     |--------------------------------------------------------------------------
@@ -72,11 +72,11 @@ return [
 
         'rackspace' => [
             'driver'    => 'rackspace',
-            'username'  => 'your-username',
-            'key'       => 'your-key',
-            'container' => 'your-container',
-            'endpoint'  => 'https://identity.api.rackspacecloud.com/v2.0/',
-            'region'    => 'IAD',
+            'username'  => env('RACKSPACE_USERNAME', 'username'),
+            'key'       => env('RACKSPACE_KEY', 'api key'),
+            'container' => env('RACKSPACE_CONTAINER', 'container'),
+            'endpoint'  => 'https://lon.identity.api.rackspacecloud.com/v2.0',
+            'region'    => 'LON',
             'url_type'  => 'publicURL',
         ],
 

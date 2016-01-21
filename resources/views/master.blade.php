@@ -16,6 +16,18 @@
 	</div>
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.2.0/min/dropzone.min.js"></script>
+	<script>
+		Dropzone.options.uploadForm = {
+  paramName: "file", // The name that will be used to transfer the file
+  maxFilesize: 200 // MB
+  /*accept: function(file, done) {
+    if (file.name == "justinbieber.jpg") {
+      done("Naha, you don't.");
+    }
+    else { done(); }
+  }*/
+};
+	</script>
 	
 </body>
 </html>

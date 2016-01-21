@@ -6,6 +6,7 @@
 	<h1>Upload New Files</h1>
 	{!! Form::open(array(
 			'url' => 'uploads', 
+			'id' => 'uploadForm',
 			'class' => 'dropzone',
 			'files' => true
 			)) !!}
